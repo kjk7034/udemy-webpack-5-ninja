@@ -3,7 +3,7 @@
 ## 강의 링크
 [링크](https://www.udemy.com/course/webpack-5-ninja-build-micro-frontend-and-web-apps)
 
-## 강의 목록
+## 배울 내용
 
 - Understand and implement Webpack 5 basics
 - Learn basics of Micro Frontends
