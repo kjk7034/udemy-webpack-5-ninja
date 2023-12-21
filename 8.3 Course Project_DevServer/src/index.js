@@ -1,6 +1,5 @@
 import $ from "jquery";
 import _ from "lodash";
-import bootstrap from "bootstrap";
 import Typed from "typed.js";
 import validate from "validate.js";
 import toastr from "toastr";

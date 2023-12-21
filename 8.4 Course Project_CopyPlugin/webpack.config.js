@@ -49,6 +49,7 @@ module.exports = {
           from: path.resolve(__dirname, "src/assets/images/*"),
           to: path.resolve(__dirname, "dist"),
           context: "src",
+          noErrorOnMissing: true
         }        
       ],
     }),
