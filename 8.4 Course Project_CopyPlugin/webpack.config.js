@@ -40,16 +40,14 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/pages/courses.html",
       chunks: ["courses"],
-      filename: "courses.html",
-      base: "pages"
+      filename: "courses.html"
     }),
     new CopyPlugin({
       patterns: [
         {
-          from: path.resolve(__dirname, "src/assets/images/*"),
+          from: path.resolve(__dirname, "src/assets/images/*").replace(/\\/g, "/"),
           to: path.resolve(__dirname, "dist"),
-          context: "src",
-          noErrorOnMissing: true
+          context: "src"
         }        
       ],
     }),
