@@ -59,7 +59,7 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         {
-          from: path.resolve(__dirname, "src/assets/images/*"),
+          from: path.resolve(__dirname, "src/assets/images/*").replace(/\\/g, "/"),
           to: path.resolve(__dirname, "dist"),
           context: "src",
         },

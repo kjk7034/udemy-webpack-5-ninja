@@ -1,8 +1,12 @@
 import React from 'react';
-import './button.scss';
+import './Button.scss';
 
-function Button(props) {
-  return <button {...props}>{props.title}</button>;
+function Button({ title, ...restProps }) {
+  return (
+    <button type="button" {...restProps}>
+      {title}
+    </button>
+  );
 }
 
 export default Button;

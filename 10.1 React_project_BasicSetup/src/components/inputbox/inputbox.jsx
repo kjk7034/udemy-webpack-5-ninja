@@ -1,12 +1,12 @@
 import React from 'react';
-import './inputbox.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExclamation } from '@fortawesome/free-solid-svg-icons';
+import './inputbox.scss';
 
-function Inputbox(props) {
+function Inputbox({ placeholder }) {
   return (
     <div className="textinput-container">
-      <input placeholder={props.placeholder} type="text" />
+      <input placeholder={placeholder} type="text" />
       <div className="input-error">
         <FontAwesomeIcon icon={faExclamation} />
         Error message

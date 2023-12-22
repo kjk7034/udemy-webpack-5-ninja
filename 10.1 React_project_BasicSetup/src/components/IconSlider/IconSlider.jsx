@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 import React from 'react';
 import './IconSlider.scss';
 
@@ -19,7 +20,7 @@ const movies = [
   '15.jpeg',
 ];
 
-function IconSlider(props) {
+function IconSlider({ title }) {
   const randomMovie = (items) => {
     const movList = [];
     for (let i = 0; i < items; i++) {
@@ -39,7 +40,7 @@ function IconSlider(props) {
 
   return (
     <div className="list-container">
-      <div className="list-title">{props.title}</div>
+      <div className="list-title">{title}</div>
       <div className="movies-container">{randomMovie(5)}</div>
     </div>
   );

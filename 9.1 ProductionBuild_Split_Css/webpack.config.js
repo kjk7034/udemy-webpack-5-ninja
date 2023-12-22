@@ -1,7 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
-const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
@@ -48,13 +47,12 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         {
-          from: path.resolve(__dirname, "src/assets/images/*"),
+          from: path.resolve(__dirname, "src/assets/images/*").replace(/\\/g, "/"),
           to: path.resolve(__dirname, "dist"),
           context: "src",
         },
       ],
     }),
-    // new BundleAnalyzerPlugin({}),
     new MiniCssExtractPlugin()
   ],
   optimization: {
