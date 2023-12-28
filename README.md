@@ -1,6 +1,7 @@
 # Webpack 5 Ninja (2023) - Build Micro frontend and web apps
 
 ## 강의 링크
+
 [링크](https://www.udemy.com/course/webpack-5-ninja-build-micro-frontend-and-web-apps)
 
 ## 배울 내용
@@ -11,3 +12,11 @@
 - Learn about optimizing builds using techniques like Tree shaking , multiple bundles , caching and more
 - Full guide using a sample project
 
+## 수강 후기
+
+- webpack의 Loader, Plugin에 대한 간단하게 이해를 할 수 있었다.
+- Micro frontend에 대해 간단하게 이해를 할 수 있었다.
+
+## Next
+
+- webpack으로 된 이 프로젝트를 vite로 바꿔보기.
