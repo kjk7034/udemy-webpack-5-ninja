@@ -17,6 +17,12 @@
 - webpack의 Loader, Plugin에 대한 간단하게 이해를 할 수 있었다.
 - Micro frontend에 대해 간단하게 이해를 할 수 있었다.
 
+## 추가 테스트
+
+`11.3 MF_Project_State_Management`의 결과물을 분석해보기.
+
+![분석 결과](./analyzer_result.PNG)
+
 ## Next
 
 - webpack으로 된 이 프로젝트를 vite로 바꿔보기.

@@ -2,6 +2,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 const { ModuleFederationPlugin } = require("webpack").container;
+const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 
 module.exports = {
   mode: "development",
@@ -71,10 +72,10 @@ module.exports = {
       remotes: {
         homepage: "home@http://localhost:3000/remoteEntry.js",
         detailspage: "details@http://localhost:3001/remoteEntry.js",
-        seatselection: "seatselection@http://localhost:3003/remoteEntry.js"
+        seatselection: "seatselection@http://localhost:3003/remoteEntry.js",
       },
-      exposes:{
-        "./MovieData": "./src/movieObservable.js"
+      exposes: {
+        "./MovieData": "./src/movieObservable.js",
       },
       shared: ["react", "react-dom"],
     }),
@@ -83,6 +84,7 @@ module.exports = {
       template: "./src/index.html",
       filename: "index.html",
     }),
+    new BundleAnalyzerPlugin({}),
   ],
   optimization: {
     splitChunks: {
